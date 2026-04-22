@@ -180,6 +180,11 @@ onMounted(() => {
   column-gap: 14px;
   border-bottom: 1px solid var(--white);
   padding-bottom: 4px;
+
+  /* svg */
+  svg {
+    color: var(--white);
+  }
 }
 </style>
 

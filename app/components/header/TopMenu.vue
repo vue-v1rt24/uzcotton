@@ -62,7 +62,7 @@ const menus = [
 
 .top_menu {
   height: 54px;
-  color: var(--gray);
+  color: var(--color-af);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +106,7 @@ const menus = [
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;
-  color: var(--gray);
+  color: var(--color-af);
   display: flex;
   align-items: center;
   column-gap: 6px;

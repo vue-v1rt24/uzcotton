@@ -34,3 +34,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/*  */
+
+.h2 {
+  font-weight: 700;
+  font-size: 42px;
+  color: var(--black);
+
+  /* media */
+  @media (max-width: 576px) {
+    font-size: 28px;
+  }
+}
