@@ -8,4 +8,8 @@
   </header>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.header {
+  margin-bottom: 50px;
+}
+</style>
