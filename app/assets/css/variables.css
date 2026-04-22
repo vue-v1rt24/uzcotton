@@ -1,0 +1,12 @@
+@import './fonts.css';
+
+:root {
+  --black: #444;
+  --red: #e73840;
+  --white: #fff;
+  --gray: #afafaf;
+
+  /*  */
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'FreeSet', sans-serif;
+}
