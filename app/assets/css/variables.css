@@ -1,0 +1,25 @@
+@import './fonts.css';
+
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'Unbounded', sans-serif;
+  --third-family: 'FreeSet', sans-serif;
+
+  /*  */
+
+  --black: #444;
+  --color-27292e: #27292e;
+  --color-afafaf: #afafaf;
+  --color-f9f9f9: #f9f9f9;
+  --color-f2f2f2: #f2f2f2;
+  --color-e3e3e3: #e3e3e3;
+  --color-d4d4d4: #d4d4d4;
+  --color-eee: #eee;
+  --red: #e73840;
+  --white: #fff;
+  --red-hover: #c51921;
+
+  /*  */
+
+  --transition: 0.3s;
+}
