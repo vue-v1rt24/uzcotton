@@ -18,11 +18,6 @@
   display: flex;
   align-items: center;
   column-gap: 10px;
-
-  /* media */
-  @media (max-width: 1400px) {
-    display: none;
-  }
 }
 
 .address__p {

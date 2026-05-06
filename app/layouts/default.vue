@@ -1,8 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const viewport = useViewport();
+</script>
 
 <template>
   <div>
-    <Header />
+    <header-pc v-if="viewport.isGreaterOrEquals('screen901')" />
+    <header-mob v-else />
 
     <main>
       <slot />

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/image'],
+  modules: ['@nuxt/image', 'nuxt-viewport'],
 
   /*  */
 
@@ -57,4 +57,20 @@ export default defineNuxtConfig({
     domains: ['https://pranaadmimwp.pranait.ru'],
     domains: [`${process.env.NUXT_PUBLIC_DOMAINS}`],
   }, */
+
+  viewport: {
+    breakpoints: {
+      screen901: 901,
+      screen1024: 1024,
+      screen1100: 1100,
+      screen1200: 1200,
+      screen1280: 1280,
+      screen1300: 1300,
+      screen1600: 1600,
+
+      screen768: 768,
+      screen576: 576,
+      screen320: 320,
+    },
+  },
 }); // end defineNuxtConfig

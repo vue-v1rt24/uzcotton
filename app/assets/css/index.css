@@ -4,13 +4,18 @@
 /*  */
 
 body {
-  min-width: 360px;
+  min-width: 375px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   color: var(--black);
   background-color: var(--white-color);
   overflow-x: hidden;
+
+  /* .open */
+  &.open {
+    overflow: hidden;
+  }
 }
 
 /*  */

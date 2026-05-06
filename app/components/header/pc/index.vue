@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <HeaderTop />
-  <HeaderCenter />
-  <HeaderBottom />
+  <HeaderPcTop />
+  <HeaderPcCenter />
+  <HeaderPcBottom />
 </template>
 
 <style lang="css" scoped></style>

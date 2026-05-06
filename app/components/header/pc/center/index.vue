@@ -17,10 +17,10 @@ const zvonok = () => {
         <!-- Логотип -->
         <div class="center__logo">
           <NuxtLink v-if="route.path !== '/'" to="/">
-            <img src="/img/logo.svg" alt="" />
+            <SvgLogo />
           </NuxtLink>
 
-          <img v-else src="/img/logo.svg" alt="" />
+          <SvgLogo v-else />
         </div>
 
         <!-- Поиск -->
@@ -31,10 +31,10 @@ const zvonok = () => {
         </UiInput>
 
         <!-- Адрес -->
-        <HeaderCenterAddress />
+        <HeaderPcCenterAddress class="center__address" />
 
         <!-- Телефон и почта -->
-        <HeaderCenterTelMail />
+        <HeaderPcCenterTelMail class="center__tel_email" />
 
         <!-- Заказать звонок -->
         <UiButton title="Заказать звонок" @click-event="zvonok" />
@@ -55,5 +55,28 @@ const zvonok = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  /* .label */
+  .label {
+    svg {
+      color: #909090;
+    }
+  }
+}
+
+/*  */
+.center__address {
+  /* media */
+  @media (max-width: 1400px) {
+    display: none;
+  }
+}
+
+/*  */
+.center__tel_email {
+  /* media */
+  @media (max-width: 1100px) {
+    display: none;
+  }
 }
 </style>

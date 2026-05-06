@@ -31,13 +31,11 @@
         <!--  -->
 
         <ul class="top__menu_2">
-          <li class="top__menu_2__auth">
+          <li>
             <NuxtLink to="#" class="top__menu_2__auth_vhod">
               <span class="top__menu_2__auth_vhod__person"><SvgPerson /></span>
-              <span>Вход</span>
+              <span>Вход / Регистрация</span>
             </NuxtLink>
-            <span class="top__menu_2__auth_vhod__slash">/</span>
-            <NuxtLink to="#">Регистрация</NuxtLink>
           </li>
           <li>
             <NuxtLink to="#" class="top__menu_2__favorite">
@@ -45,10 +43,7 @@
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="#" class="top__menu_2__cart">
-              <span class="top__menu_2__cart_count">0</span>
-              <SvgCart />
-            </NuxtLink>
+            <HeaderCart />
           </li>
         </ul>
       </div>
@@ -77,6 +72,11 @@
   display: flex;
   align-items: center;
   column-gap: 40px;
+
+  /* media */
+  @media (max-width: 1100px) {
+    font-size: 12px;
+  }
 
   /* a */
   a {
@@ -115,18 +115,15 @@
   column-gap: 33px;
   align-items: center;
 
-  /* .top__menu_2__auth */
-  .top__menu_2__auth {
-    display: flex;
-    align-items: center;
-    column-gap: 3px;
-    margin-right: 17px;
-  }
-
   /* a */
   a {
     font-family: var(--third-family);
     font-size: 16px;
+
+    /* media */
+    @media (max-width: 1100px) {
+      font-size: 12px;
+    }
   }
 
   /* top__menu_2__auth_vhod__slash */
@@ -143,29 +140,21 @@
   }
 }
 
-/*  */
-
-.top__menu_2__cart {
-  position: relative;
+.top__menu_2__auth_vhod__person {
+  color: var(--color-afafaf);
 }
 
-.top__menu_2__cart_count {
-  position: absolute;
-  top: -20px;
-  right: -10px;
-  height: 21px;
+/*  */
+.top__menu_2__favorite {
+  /* svg */
+  svg {
+    color: var(--color-afafaf);
 
-  font-family: var(--third-family);
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  color: var(--white);
-
-  background-color: var(--red);
-  border-radius: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 6px;
+    /* media */
+    @media (max-width: 1100px) {
+      width: 20px;
+      height: 18px;
+    }
+  }
 }
 </style>
